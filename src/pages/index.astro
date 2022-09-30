@@ -1,0 +1,271 @@
+---
+import "@fontsource/atkinson-hyperlegible";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Jaden Durnford</title>
+    <style>
+      html {
+        background-color: #f5f5f5;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+
+      body {
+        font-family: "Atkinson Hyperlegible", sans-serif;
+        font-size: 18px;
+        color: rgb(69, 69, 69);
+      }
+
+      .name {
+        margin: 0 0 10px 0;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      h2 {
+        margin: 0 auto 10px auto;
+        font-size: 20px;
+        font-weight: 700;
+        width: 650px;
+      }
+
+      .main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 80px;
+      }
+
+      .introText {
+        text-align: justify;
+        width: 650px;
+        line-height: 1.75;
+        margin: 0 auto;
+      }
+
+      .introBox,
+      .projectsBox,
+      .researchBox {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 650px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .links {
+        display: flex;
+        justify-content: center;
+      }
+
+      a:link,
+      a:visited {
+        color: rgb(69, 69, 69);
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:active {
+        color: black;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .iconLink {
+        transition: transform 0.2s;
+        padding: 0px 10px;
+        line-height: 35px;
+      }
+
+      .iconLink:hover {
+        transform: scale(1.25);
+      }
+
+      .icon {
+        vertical-align: middle;
+        display: inline-block;
+        margin: auto;
+      }
+
+      .projectsBox > ul,
+      .researchBox > ul {
+        width: 650px;
+        margin: 0 auto;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      .projectsBox > ul > li,
+      .researchBox > ul > li {
+        line-height: 2;
+      }
+
+      a.inTextLink {
+        text-decoration: underline;
+      }
+
+      .projectName {
+        text-decoration: underline;
+      }
+
+      .lineBreak {
+        width: 650px;
+        margin: 0 auto;
+      }
+
+      hr {
+        color: rgb(69, 69, 69);
+        margin: 25px auto;
+      }
+
+      @media only screen and (max-width: 690px) {
+        .introText {
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        .projectsBox > ul,
+        .researchBox > ul {
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        .header {
+          width: 100%;
+          margin: 0 auto 20px auto;
+        }
+
+        .introBox,
+        .projectsBox,
+        .researchBox {
+          margin: 0 auto;
+          width: 90%;
+        }
+
+        .lineBreak {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="introBox">
+        <div class="header">
+          <h1 class="name">Jaden Durnford</h1>
+          <div class="links">
+            <a
+              class="iconLink"
+              href="https://github.com/JadenDurnford"
+              target="_blank"
+              ><img class="icon" src="./icons/githubicon.svg" height="25px" />
+            </a>
+            <a
+              class="iconLink"
+              href="https://twitter.com/JadenDurnford"
+              target="_blank"
+              ><img class="icon" src="./icons/twittericon.svg" height="25px" />
+            </a>
+            <a
+              class="iconLink"
+              href="mailto:jadendurnford@gmail.com"
+              target="_blank"
+              ><img class="icon" src="./icons/emailicon.svg" height="25px" />
+            </a>
+          </div>
+        </div>
+        <h2>About</h2>
+        <p class="introText">
+          I'm a 3rd year Mechanical Engineering student at the University of
+          Waterloo. Over the past year I've been delving into Crypto through
+          <a class="inTextLink" href="#projects">projects</a> and <a
+            class="inTextLink"
+            href="#research">research</a
+          >. I'm currently looking for development opportunities in web3, so
+          please, take a copy of my <a
+            href="./resume.pdf"
+            target="_blank"
+            class="inTextLink">resume</a
+          >
+          and reach out!
+        </p>
+      </div>
+      <div class="lineBreak">
+        <hr />
+      </div>
+      <div class="projectsBox">
+        <h2 id="projects">Projects</h2>
+        <ul>
+          <li>
+            <a href="https://habipets.vercel.app/" target="_blank"
+              ><span class="projectName">Habipets</span><span>
+                — Smart NFT backed Habit Tracker</span
+              >
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/JadenDurnford/snip3r" target="_blank"
+              ><span class="projectName">Snip3r</span><span>
+                — Trait and Rarity based NFT Sniper</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/JadenDurnford/twitter-tracker-bot"
+              target="_blank"
+              ><span class="projectName">Twitter Tracker</span><span>
+                — New follow alerts for tracked accounts via Discord</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/JadenDurnford/NFT-rarity-calc"
+              target="_blank"
+              ><span class="projectName">NFT Rarity Calculator</span><span>
+                — NFT collection rarity scores calculated through trait data</span
+              >
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/JadenDurnford/WeightWeave"
+              target="_blank"
+              ><span class="projectName">WeightWeave</span><span>
+                — Weight tracker saved to the permaweb</span
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="lineBreak">
+        <hr />
+      </div>
+      <div class="researchBox">
+        <h2 id="research">Research</h2>
+        <ul>
+          <li><span>Coming Soon...</span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
