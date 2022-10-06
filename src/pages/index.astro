@@ -7,7 +7,45 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+
     <title>Jaden Durnford</title>
+    <meta
+      name="description"
+      content="Mech Eng student diving into Crypto development"
+    />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Jaden Durnford" />
+    <meta
+      itemprop="description"
+      content="Mech Eng student diving into Crypto development"
+    />
+    <meta itemprop="image" content="https://www.jadendurnford.com/meta.png" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.jadendurnford.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jaden Durnford" />
+    <meta
+      property="og:description"
+      content="Mech Eng student diving into Crypto development"
+    />
+    <meta
+      property="og:image"
+      content="https://www.jadendurnford.com/meta.png"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jaden Durnford" />
+    <meta
+      name="twitter:description"
+      content="Mech Eng student diving into Crypto development"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.jadendurnford.com/meta.png"
+    />
     <link
       rel="preload"
       href="/fonts/AtkinsonHyperlegible-Regular.ttf"
@@ -83,8 +121,7 @@
       }
 
       .introBox,
-      .projectsBox,
-      .researchBox {
+      .projectsBox {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -136,24 +173,18 @@
         margin: auto;
       }
 
-      .projectsBox > ul,
-      .researchBox > ul {
+      .projectsBox > ul {
         width: 650px;
         margin: 0 auto;
         padding: 0;
         list-style-type: none;
       }
 
-      .projectsBox > ul > li,
-      .researchBox > ul > li {
+      .projectsBox > ul > li {
         line-height: 2;
       }
 
       a.inTextLink {
-        text-decoration: underline;
-      }
-
-      .projectName {
         text-decoration: underline;
       }
 
@@ -210,61 +241,65 @@
           <div class="links">
             <a
               class="iconLink"
-              href="mailto:jadendurnford@gmail.com"
+              href="https://github.com/JadenDurnford"
               target="_blank"
+              aria-label="github link"
               ><img
                 class="icon"
-                src="./icons/emailicon.svg"
+                src="./icons/githubicon.svg"
                 height="25px"
                 width="25px"
+                alt="github icon"
               />
             </a>
             <a
               class="iconLink"
               href="https://twitter.com/JadenDurnford"
               target="_blank"
+              aria-label="twitter link"
               ><img
                 class="icon"
                 src="./icons/twittericon.svg"
                 height="25px"
                 width="25px"
+                alt="twitter icon"
               />
             </a>
             <a
               class="iconLink"
-              href="https://github.com/JadenDurnford"
+              href="mailto:jadendurnford@gmail.com"
               target="_blank"
+              aria-label="email link"
               ><img
                 class="icon"
-                src="./icons/githubicon.svg"
+                src="./icons/emailicon.svg"
                 height="25px"
                 width="25px"
+                alt="email icon"
               />
             </a>
-            <a class="iconLink" href="./resume.pdf" target="_blank"
+            <a
+              class="iconLink"
+              href="./resume.pdf"
+              target="_blank"
+              aria-label="resume link"
               ><img
                 class="icon"
                 src="./icons/resumeicon.svg"
                 height="25px"
                 width="25px"
+                alt="resume icon"
               />
             </a>
           </div>
         </div>
         <h2>About</h2>
         <p class="introText">
-          I'm a 3rd year Mechanical Engineering student at the University of
-          Waterloo. Over the past year I've been delving into Crypto through
-          <a class="inTextLink" href="#projects">projects</a> and <a
-            class="inTextLink"
-            href="#research">research</a
-          >. I'm currently looking for development opportunities in web3, so
-          please, take a copy of my <a
-            href="./resume.pdf"
-            target="_blank"
-            class="inTextLink">resume</a
-          >
-          and reach out!
+          By day, I'm a 3rd year Mechanical Engineering student at the
+          University of Waterloo. My work combines software engineering with
+          applied product design, fabrication, and assembly. By night, I write
+          software that interests me, primarily at the intersections of crypto
+          and social.
         </p>
       </div>
       <div class="lineBreak">
@@ -275,24 +310,21 @@
         <ul>
           <li>
             <a href="https://habipets.vercel.app/" target="_blank"
-              ><span class="projectName">Habipets</span><span>
-                — Smart NFT backed Habit Tracker</span
-              >
+              ><span> Habipets — Smart NFT backed Habit Tracker</span>
             </a>
           </li>
           <li>
             <a href="https://github.com/JadenDurnford/snip3r" target="_blank"
-              ><span class="projectName">Snip3r</span><span>
-                — Trait and Rarity based NFT Sniper</span
-              >
+              ><span> Snip3r — Trait and Rarity based NFT Sniper</span>
             </a>
           </li>
           <li>
             <a
               href="https://github.com/JadenDurnford/twitter-tracker-bot"
               target="_blank"
-              ><span class="projectName">Twitter Tracker</span><span>
-                — New follow alerts for tracked accounts via Discord</span
+              ><span>
+                Twitter Tracker — New follow alerts for tracked accounts via
+                Discord</span
               >
             </a>
           </li>
@@ -300,8 +332,9 @@
             <a
               href="https://github.com/JadenDurnford/NFT-rarity-calc"
               target="_blank"
-              ><span class="projectName">NFT Rarity Calculator</span><span>
-                — NFT collection rarity scores calculated through trait data</span
+              ><span>
+                NFT Rarity Calculator — NFT collection rarity scores calculated
+                through trait data</span
               >
             </a>
           </li>
@@ -314,15 +347,6 @@
               >
             </a>
           </li>
-        </ul>
-      </div>
-      <div class="lineBreak">
-        <hr />
-      </div>
-      <div class="researchBox">
-        <h2 id="research">Research</h2>
-        <ul>
-          <li><span>Coming Soon...</span></li>
         </ul>
       </div>
     </div>
